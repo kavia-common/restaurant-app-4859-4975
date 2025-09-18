@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/kavia/workspace/code-generation/restaurant-app-4859-4975/MobileFrontend
+flutter analyze
+
