@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:MobileFrontend/main.dart';
+import 'package:mobile_frontend/main.dart';
 
 void main() {
   testWidgets('App generation message displayed', (WidgetTester tester) async {

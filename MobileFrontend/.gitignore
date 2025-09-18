@@ -1,1 +1,62 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# Android related
+**/android/.gradle/
+**/android/captures/
+**/android/gradle/wrapper/gradle-wrapper.jar
+**/android/local.properties
+**/android/key.properties
+**/android/**/google-services.json
+**/android/**/app/google-services.json
+
+# iOS related
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/.symlinks/
+**/ios/Pods/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner/GoogleService-Info.plist
+
+# Web
+**/web/.dart_tool/
+
+# macOS
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+
+# Windows
+**/windows/Flutter/ephemeral/
+
+# Linux
+**/linux/flutter/ephemeral/
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.iml
+
+# Environment and secrets
 .env
+.env.*
+!.env.example
+
+# Logs and coverage
+pubspec.lock # Lockfile is usually committed for apps; if you prefer, remove this line.
+coverage/
+.dart_server/
+*.log
+
+# Generated files
+**/lib/generated_plugin_registrant.dart
+**/lib/**.g.dart
+**/lib/**.freezed.dart

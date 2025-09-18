@@ -1,0 +1,31 @@
+# This analysis options file enables recommended Flutter/Dart lints and a few additional
+# rules tailored to maintain a consistent and high-quality codebase.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    # Strong mode is on by default in Dart 2+, but keeping explicit modern settings is helpful.
+    strict-inference: true
+    strict-raw-types: true
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "build/**"
+    - ".dart_tool/**"
+
+linter:
+  rules:
+    # Additional commonly used lints beyond flutter_lints
+    - always_declare_return_types
+    - avoid_print
+    - cancel_subscriptions
+    - close_sinks
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_single_quotes
+    - sort_pub_dependencies
+    - unnecessary_const
+    - use_key_in_widget_constructors
