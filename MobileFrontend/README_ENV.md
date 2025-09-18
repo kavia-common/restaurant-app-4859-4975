@@ -12,6 +12,13 @@ Example:
 cp .env.example .env
 # then edit .env values
 
+Variables:
+- API_BASE_URL: Base URL of BackendAPI (e.g., http://localhost:3000)
+- INSTAGRAM_ACCESS_TOKEN: Token for Instagram if used via backend proxy (optional)
+- SOCIAL_CLIENT_ID / SOCIAL_CLIENT_SECRET: Used by backend to orchestrate social auth (optional)
+- WEATHER_API_KEY: For weather-based menu recommendations (optional)
+- SITE_URL: Public URL for deep links or email redirects
+
 Notes:
 - Do not hardcode secrets in source code.
 - If you add new env variables, document them in .env.example too.
