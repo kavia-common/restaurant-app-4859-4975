@@ -5,14 +5,14 @@ import 'package:mobile_frontend/main.dart';
 void main() {
   testWidgets('App generation message displayed', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
-
+    // Allow initial overlay to appear
     expect(find.text('MobileFrontend App is being generated...'), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
   });
 
   testWidgets('App bar has correct title', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
-
-    expect(find.text('MobileFrontend'), findsOneWidget);
+    // App title from localization is "Restaurant"
+    expect(find.text('Restaurant'), findsOneWidget);
   });
 }

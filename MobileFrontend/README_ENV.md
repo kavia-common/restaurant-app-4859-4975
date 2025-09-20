@@ -12,6 +12,13 @@ Example:
 cp .env.example .env
 # then edit .env values
 
+Keys:
+- API_BASE_URL: Backend REST API base URL.
+- INSTAGRAM_BUSINESS_ID, INSTAGRAM_ACCESS_TOKEN: If integrating Instagram Graph API via backend/proxy, provide the credentials your backend expects.
+- SITE_URL: Deployment URL for deep links and email redirects.
+- WHATSAPP_DEFAULT_MESSAGE: Default WhatsApp greeting message.
+
 Notes:
 - Do not hardcode secrets in source code.
 - If you add new env variables, document them in .env.example too.
+- Ask the user to provide the environment values. The orchestrator will set them in the CI environment.
