@@ -10,6 +10,12 @@ Features:
 Environment:
 - Copy .env.example to .env and set BACKEND_API_BASE_URL.
 
+Entry point:
+- The app entry file is at lib/main.dart with the root widget MyApp.
+
 Run:
 - flutter pub get
 - flutter run
+
+Test:
+- flutter test
