@@ -3,16 +3,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mobile_frontend/main.dart';
 
 void main() {
-  testWidgets('App generation message displayed', (WidgetTester tester) async {
+  testWidgets('App renders and has routes', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
-
-    expect(find.text('MobileFrontend App is being generated...'), findsOneWidget);
-    expect(find.byType(CircularProgressIndicator), findsOneWidget);
+    expect(find.byType(MaterialApp), findsOneWidget);
   });
 
-  testWidgets('App bar has correct title', (WidgetTester tester) async {
+  testWidgets('Home screen shows key actions', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
-
-    expect(find.text('MobileFrontend'), findsOneWidget);
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Heritage'), findsOneWidget);
+    expect(find.byIcon(Icons.restaurant_menu), findsOneWidget);
   });
 }
