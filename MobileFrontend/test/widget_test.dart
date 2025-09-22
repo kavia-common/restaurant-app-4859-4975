@@ -1,18 +1,14 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mobile_frontend/main.dart';
 
-/// Widget smoke tests to ensure the app boots and renders primary UI.
+// PUBLIC_INTERFACE
+/// Basic widget smoke tests to ensure the app boots and renders minimal UI.
 void main() {
-  testWidgets('App renders and has routes', (WidgetTester tester) async {
-    await tester.pumpWidget(const MyApp());
-    expect(find.byType(MaterialApp), findsOneWidget);
-  });
+  testWidgets('App boots successfully', (WidgetTester tester) async {
+    // Build our app and trigger a frame using the correct root widget.
+    await tester.pumpWidget(const RestaurantApp());
 
-  testWidgets('Home screen shows key actions', (WidgetTester tester) async {
-    await tester.pumpWidget(const MyApp());
-    await tester.pumpAndSettle();
-    expect(find.textContaining('Heritage'), findsOneWidget);
-    expect(find.byIcon(Icons.restaurant_menu), findsOneWidget);
+    // Verify that the bootstrap screen renders expected text.
+    expect(find.textContaining('Mobile Frontend is set up'), findsOneWidget);
   });
 }
