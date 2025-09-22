@@ -1,0 +1,1 @@
+/home/kavia/workspace/code-generation/restaurant-app-4859-4975/MobileFrontend/build/app/intermediates/cxx/RelWithDebInfo/153y3430/obj/x86_64
